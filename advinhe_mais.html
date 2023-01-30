@@ -1,0 +1,24 @@
+<meta charset="UTF-8">
+
+<input/>
+<button>Compare meu Numero</button>
+
+<script>
+	var Numero = Math.round(Math.random()*10);
+
+	var input = document.querySelector("input");
+	input.focus();
+	function verifica () {
+		if(input.value == Numero) {
+		alert("Você Acertou ! Parabéns !");
+		} else {
+		alert("Que Pena , Você Errou !");
+		}
+		input.value = "";
+		input.focus();
+	}
+	
+	var button = document.querySelector("button");
+	button.onclick = verifica;
+
+</script>
